@@ -1,6 +1,6 @@
 ### Movie App
 
-[Website link](https://marvel-app-ufgfemhblf.now.sh) 
+[Website link](movie-app.now.sh) 
 
 Pages
 
