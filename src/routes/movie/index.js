@@ -19,7 +19,7 @@ export default class Movie extends Component{
 	}
 
 	componentDidMount(){
-		this.props.movieStore.results = false;
+		this.props.movieStore.movie = false;
 		this.props.movieStore.headerActive ? null : (this.props.movieStore.headerActive = true);
 		const current = getCurrentUrl().split('/');
 		const id = decodeURIComponent(current[2]);
@@ -37,7 +37,7 @@ export default class Movie extends Component{
 
 	render( { movieStore } , { handleModal , video } ){
 		const v = video;
-		const movie = movieStore.movie !== null ? movieStore.movie : false;
+		const movie = movieStore.movie ? movieStore.movie : false;
 		if (movie){
 		 return (
 				<div class={`columns ${style.home}`}>
