@@ -1,0 +1,10 @@
+.home {
+	width: 100%;	
+	padding:5vh;
+}
+.loading{
+	width: 75px;
+	height: 75px;
+	vertical-align: center;
+	margin:2em auto;
+}
